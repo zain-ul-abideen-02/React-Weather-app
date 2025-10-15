@@ -1,0 +1,101 @@
+/* WeatherApp.css */
+.weather-app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #80deea);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #00796b;
+}
+
+.search {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.search button {
+  padding: 10px 20px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.search button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.search button:hover:not(:disabled) {
+  background-color: #004d40;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.weather-info img {
+  width: 100px;
+  height: 100px;
+}
+
+.weather-info h3 {
+  font-size: 28px;
+  margin: 10px 0 5px;
+}
+
+.temp {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ff5722;
+  margin: 5px 0;
+}
+
+.desc {
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.details {
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
